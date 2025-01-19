@@ -1,0 +1,45 @@
+/* fonts */
+:root {
+    --logo-font: "Figtree";
+    --primary-font: "Merriweather";
+}
+
+/* colors */
+:root {
+    --primary-color1: #068466;
+    --primary-color2: #009e87;
+    --button-color: #ffdaa5;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color1);
+}
+
+.nav-link {
+    color: var(--primary-color2);
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid var(--primary-color1);
+}
+
+.btn-signup {
+    background-color: var(--primary-color1);
+    color: white;
+    border-radius: 20px;
+    padding: 0.5rem;
+  display: inline-block; 
+  margin-left: 15px;
+    
+}
+
+.btn-signup:hover {
+    background-color:var(--primary-color2);
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    color: #008060;
+    cursor: pointer;
+}

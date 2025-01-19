@@ -1,10 +1,9 @@
-$primary-color: #068466;
+$primary-color1: #068466;
+$primary-color2:#009E87;
+$button-color:#FFDAA5;
+$primary-font: 'Merriweather, sans-serif';
+$logo-font:'Figtree';
 
-body {
-    background-color: $primary-color;
-    font-family: Arial, sans-serif;
-
-    h1 {
-        color:  color.adjust($primary-color, $lightness: -10%);
-    }
+body{
+    font-family: $logo-font;
 }

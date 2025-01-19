@@ -11,9 +11,22 @@
     --button-color: #ffdaa5;
 }
 
-.navbar-brand {
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+/* navbar */
+.navbar{
+    margin-bottom: 1rem;
+}
+
+.container .navbar-brand {
     font-weight: bold;
+    text-transform: uppercase;
     color: var(--primary-color1);
+    font-family: var(--logo-font);
 }
 
 .nav-link {
@@ -28,18 +41,98 @@
     background-color: var(--primary-color1);
     color: white;
     border-radius: 20px;
-    padding: 0.5rem;
-  display: inline-block; 
-  margin-left: 15px;
-    
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .btn-signup:hover {
-    background-color:var(--primary-color2);
+    background-color: var(--primary-color2);
 }
 
 .search-icon {
     font-size: 1.2rem;
     color: #008060;
     cursor: pointer;
+}
+
+/* hero */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.hero-container {
+    padding-left: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row h1 {
+    font-size: 2.5rem;
+    color: #0578FF;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: var(--primary-font);
+}
+
+p {
+    color: #1c1c1c;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color1);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color2);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn-signup{
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        display: none;
+    }
+
+    .btn-primary {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
 }

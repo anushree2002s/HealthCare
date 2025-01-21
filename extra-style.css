@@ -489,24 +489,29 @@ img {
     text-decoration: underline;
 }
 
-.socials{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    align-items: center;
-    gap: 1rem;
+.socials-container {
+    text-align: center;
 }
 
-.socials .icon{
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.socials .icon {
     width: 2rem;
     height: 2rem;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .footer .border-top {
     border-color: #e5e5e5;
 }
 
-.footer .location, .footer .copyright{
+.footer .location,
+.footer .copyright {
     color: #fefefe;
 }

@@ -27,6 +27,7 @@
   </head>
   <body>
     <!-- icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
     <!-- search -->
     <symbol id="search" viewBox="0 0 24 24">
       <path
@@ -41,6 +42,11 @@
         fill="#068466"
         d="M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0"
       />
+    </symbol>
+
+    <!-- tick -->
+    <symbol id="tick" viewBox="0 0 15 15">
+      <path fill="#068466" fill-rule="evenodd" d="M0 7.5a7.5 7.5 0 1 1 15 0a7.5 7.5 0 0 1-15 0m7.072 3.21l4.318-5.398l-.78-.624l-3.682 4.601L4.32 7.116l-.64.768z" clip-rule="evenodd" />
     </symbol>
 
     <!-- youtube -->
@@ -188,6 +194,7 @@
         d="M187.917 3.262h19.405l32.994 59.69l33-59.69h18.983v98.08h-15.83v-75.17l-28.938 52.054H232.68l-28.932-52.054v75.17h-15.83zM341.9 39.832c-11.352 0-18.19 8.543-19.826 19.124h38.53c-.794-10.9-7.081-19.125-18.704-19.125m-35.52 25.151c0-22.262 14.387-38.465 35.796-38.465c21.058 0 33.63 15.997 33.63 39.653v4.348h-53.732c1.906 11.509 9.543 19.265 21.857 19.265c9.824 0 15.965-2.998 21.787-8.48l8.41 10.3c-7.924 7.285-18.002 11.487-30.759 11.487c-23.175 0-36.99-16.899-36.99-38.108m88.622-23.748H380.43V28.273h14.572V6.837h15.273v21.436h22.138v12.962h-22.138V74.09c0 11.217 3.586 15.203 12.4 15.203c4.024 0 6.33-.346 9.738-.913v12.822c-4.245 1.199-8.296 1.75-12.681 1.75c-16.489 0-24.73-9.009-24.73-27.042zM496.725 53.84c-3.067-7.745-9.91-13.448-19.967-13.448c-13.07 0-21.435 9.273-21.435 24.38c0 14.727 7.701 24.449 20.809 24.449c10.305 0 17.66-5.995 20.593-13.454zm15.274 47.5h-14.993V91.112c-4.19 6.022-11.817 11.98-24.169 11.98c-19.864 0-33.14-16.63-33.14-38.32c0-21.895 13.595-38.254 33.983-38.254c10.078 0 17.985 4.03 23.326 11.142v-9.387H512z"
       />
     </symbol>
+  </svg>
 
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -279,7 +286,7 @@
             <a href="#" class="btn-primary">Get Started</a>
           </div>
           <div class="col-lg-6">
-            <img src="images/hero.png" alt="woman on phone call" />
+            <img src="images/hero.png" class="hero-img" alt="woman on phone call" />
           </div>
         </div>
       </div>
@@ -339,9 +346,8 @@
       </div>
     </div>
 
-
     <!-- carousel -->
-    <div class="carousel-container">
+    <div class="carousel-container my-5">
       <h2>
         Get treated today for<br>
         <span class="highlight" id="illness-carousel">COVID-19 Symptoms</span>
@@ -349,6 +355,68 @@
       <a href="#" class="services-link mt-5">See all our services</a>
     </div>
 
+    <!-- membership benefits -->
+    <div class="benefits-container py-5 px-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="benefits-title mb-5">Membership gives you access to our app where you can:</h1>
+          <ul class="benefits-list my-5">
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg>Connect with licensed doctors for online or in-person consultations.</li>
+            
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg>Book, reschedule, or cancel healthcare appointments easily.</li>
+
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg>Order prescribed medicines and get them delivered to your doorstep.</li>
+
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg> Assess your symptoms and get instant guidance on possible conditions.</li>
+
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg> Receive personalized health and wellness advice.</li>
+
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg> Manage and claim your health insurance conveniently.</li>
+
+            <li><svg class="icon" width="20" height="20">
+              <use xlink:href="#tick"></use>
+            </svg> Monitor physical activity, sleep, and other fitness metrics.</li>
+          </ul>
+          <a href="#" class="read-more-button px-2 py-2">See all benefits</a>
+        </div>
+  
+        <div class="col-lg-6 carousel-container">
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/membership.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/membership2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/membership3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>

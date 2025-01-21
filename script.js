@@ -18,3 +18,6 @@
 
 //change every 3 secs
   setInterval(rotateIllness, 3000);
+
+
+    

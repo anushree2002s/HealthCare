@@ -38,8 +38,8 @@
 }
 
 .btn-signup {
-    background-color: var(--primary-color1);
-    color: white;
+    border: 1px solid var(--primary-color1);
+    color: var(--primary-color1);
     border-radius: 20px;
     padding: 0.5rem 0.75rem;
     display: inline-block;
@@ -47,7 +47,8 @@
 }
 
 .btn-signup:hover {
-    background-color: var(--primary-color2);
+    background-color: var(--primary-color1);
+    color: #fff;
 }
 
 .search-icon {
@@ -84,20 +85,21 @@ p {
     margin-bottom: 30px;
 }
 
-.btn-primary {
+.get-started-button {
     display: inline-block;
-    background-color: var(--primary-color1);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px;
+    border: 1px solid var(--primary-color1);
+    color: var(--primary-color1);
+    border-radius: 20px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s;
+    padding: 0.5rem 0.75rem;
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-color2);
+.get-started-button:hover {
+    background-color: var(--primary-color1);
+    color: #fff;
 }
 
 img {
@@ -235,11 +237,12 @@ img {
     text-decoration: none;
     border-radius: 20px;
     color: var(--primary-color1);
+    padding: 0.5rem 0.75rem;
 }
 
 .read-more-button:hover{
     background-color: var(--primary-color1);
-    color: white;
+    color: #fff;
 }
 
 .carousel-inner img {

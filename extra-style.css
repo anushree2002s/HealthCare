@@ -325,7 +325,7 @@ img {
 
 /* get membership */
 .membership-container {
-    background-color: var(--primary-color1);
+    background: linear-gradient(to right, #005450 0%, #00bab1 100%);
     text-align: center;
 }
 
